@@ -28,30 +28,28 @@
 
 <body>
     <!-- Navbar desde Bootstrap -->
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+    <nav id="menu" class="container-fluid navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand pt-3" href="#">
-                <img src="./assets/img/viajes.svg" class="icon_brand" alt="">
-                <p class="text_brand">Viajes Chile</p>
+            <a class="navbar-brand col-4 col-sm-2 font-weight-normal text-white" href="#"><img
+                    src="assets/img/viajes.svg" class="icon_brand"> Viajes Chile
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            <button class="navbar-toggler border-light" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#carouselExampleControls">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Quiénes Somos</a>
+                        <a class="nav-link" href="#about">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Destacados</a>
+                        <a class="nav-link" href="#destacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -82,13 +80,13 @@
     </div>
 
     <!-- Sección Quienes somos con íconos FontAwesome y columnas desde bootstrap -->
-    <section class="sec_somos text-center">
-        <h1 class="pt-5 pb-2">¿Quiénes somos?</h1>
+    <section class="sec_somos text-center pt-5">
+        <h1 class="pb-2">¿Quiénes somos?</h1>
 
         <!-- Sección de columnas -->
         <div class="container">
             <hr class="divisor">
-            <div class="row ">
+            <div class="row pt-3 pb-5 mx-2">
                 <div class="col-md-4">
                     <div class="icon_sec_somos">
                         <i class="fas fa-plane fa-2x"></i>
@@ -135,15 +133,15 @@
     </section>
 
     <!-- Sección Destacados con cards desde bootstrap -->
-    <section class="sec_destacados text-center">
-        <h1>Destacados</h1>
-        <div class="container">
-            <hr>
+    <section class="sec_destacados text-center pt-5">
+        <h2 class="pb-2 pt-5">Destacados</h2>
+        <div class="container pb-5">
+            <hr class="divisor">
 
-            <div class="card-deck">
+            <div class="card-deck mx-2">
                 <div class="card">
                     <img src="./assets/img/card1.jpg" class="card-img-top img_card" alt="card1">
-                    <div class="card-body">
+                    <div class="card-body card_destacados">
                         <h5 class="card-title">Lorem ipsum dolor sit</h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
                             additional content. This content is a little bit longer.</p>
@@ -151,7 +149,7 @@
                 </div>
                 <div class="card">
                     <img src="./assets/img/card2.jpg" class="card-img-top img_card" alt="card2">
-                    <div class="card-body">
+                    <div class="card-body card_destacados">
                         <h5 class="card-title">Lorem, ipsum dolor</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional
                             content.
@@ -160,22 +158,18 @@
                 </div>
                 <div class="card">
                     <img src="./assets/img/card3.jpg" class="card-img-top img_card" alt="card3">
-                    <div class="card-body">
+                    <div class="card-body card_destacados">
                         <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to show that equal
-                            height
-                            action.</p>
+                            additional content..</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="./assets/img/card4.jpg" class="card-img-top img_card" alt="card4">
-                    <div class="card-body">
+                    <div class="card-body card_destacados">
                         <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                            additional content. This card has even longer content than the first to show that equal
-                            height
-                            action.</p>
+                            additional content.</p>
                     </div>
                 </div>
             </div>
@@ -184,20 +178,36 @@
     </section>
 
     <!-- Seccion Contacto con formulario desde Typeform -->
-    <section class="sec_contacto text-center">
-        <h1>Contacto</h1>
-        <div class="container">
-            AQUI VA EL FORMULARIO
+    <section class="sec_contacto text-center pt-5">
+        <h2 class="pt-5">Contacto</h2>
+        <div class="container pb-5">
+            <hr class="divisor">
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/kwcdDZX2?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
         </div>
     </section>
 
     <!-- Footer con íconos fontAwesome -->
-    <footer>
-        <span>VIAJES CHILE</span>
-        <i class="fab fa-github-square fa-3x"></i>
-        <i class="fab fa-linkedin fa-3x"></i>
-        <i class="fab fa-twitter-square fa-3x"></i>
-        <i class="fab fa-facebook-square fa-3x"></i>
+    <footer class="footer_pagina text-center">
+        <div class="container py-1">
+            <div class="row">
+                <div class="col-6 p-0">
+                    <p class="brand_footer pt-2">VIAJES CHILE</p>
+
+                </div>
+
+                <div class=" col-6 icon_footer pt-2 p-0">
+                    <i class="fab fa-github-square fa-2x mx-1"></i>
+                    <i class="fab fa-linkedin fa-2x mx-1"></i>
+                    <i class="fab fa-twitter-square fa-2x mx-1"></i>
+                    <i class="fab fa-facebook-square fa-2x mx-1"></i>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
     </footer>
 
 

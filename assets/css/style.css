@@ -7,17 +7,21 @@ body {
 }
 
 /* Estilo y tamaño para la marca del Nav */
+.brand_menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.text_brand {
+    font-size: 40px;
+}
 
 .icon_brand {
-    width: 5%;
-    vertical-align: top;
-
+    max-width: 30px;
 }
 
-.icon_brand,
-.text_brand {
-    display: inline-block;
-}
+
 
 /* Estilo sección ¿Quiénes somos? */
 .sec_somos h1 {
@@ -35,7 +39,35 @@ body {
     margin: 5px 0;
 }
 
-.texto_parrafo{
+.texto_parrafo {
     text-align: left;
 }
+
+/* Sección destacados */
+.card_destacados {
+    background-color: #17A3B8;
+    text-align: left;
+}
+
+.img_card {
+    height: 10rem;
+}
+
+/* Estilo del footer */
+.footer_pagina {
+    background-color: #17A3B8;
+}
+
+.brand_footer,
+.icon_footer {
+    display: inline-block;
+
+
+}
+
+.brand_footer {
+    font-size: x-large;
+    margin-bottom: 0;
+}
+
 
