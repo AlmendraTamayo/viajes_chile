@@ -28,10 +28,10 @@
 
 <body>
     <!-- Navbar desde Bootstrap -->
-    <nav id="menu" class="container-fluid navbar navbar-expand-lg navbar-dark fixed-top">
+    <nav id="menu" class="container-fluid navbar navbar-expand-lg navbar-dark fixed-top ">
         <div class="container">
-            <a class="navbar-brand col-4 col-sm-2 font-weight-normal text-white" href="#"><img
-                    src="assets/img/viajes.svg" class="icon_brand"> Viajes Chile
+            <a class="navbar-brand col-4 col-sm-2 font-weight-normal text-white" href="#carouselExampleControls"><img
+                    src="assets/img/viajes.svg" class="icon_brand" alt="icono"> Viajes Chile
             </a>
             <button class="navbar-toggler border-light" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +80,7 @@
     </div>
 
     <!-- Sección Quienes somos con íconos FontAwesome y columnas desde bootstrap -->
-    <section class="sec_somos text-center pt-5">
+    <section id="about" class="sec_somos text-center pt-5">
         <h1 class="pb-2">¿Quiénes somos?</h1>
 
         <!-- Sección de columnas -->
@@ -133,7 +133,7 @@
     </section>
 
     <!-- Sección Destacados con cards desde bootstrap -->
-    <section class="sec_destacados text-center pt-5">
+    <section id="destacados" class="sec_destacados text-center pt-5">
         <h2 class="pb-2 pt-5">Destacados</h2>
         <div class="container pb-5">
             <hr class="divisor">
@@ -178,11 +178,29 @@
     </section>
 
     <!-- Seccion Contacto con formulario desde Typeform -->
-    <section class="sec_contacto text-center pt-5">
+    <section id="contacto" class="sec_contacto text-center pt-5">
         <h2 class="pt-5">Contacto</h2>
         <div class="container pb-5">
             <hr class="divisor">
-            <div class="typeform-widget" data-url="https://form.typeform.com/to/kwcdDZX2?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+            <div class="typeform-widget" data-url="https://form.typeform.com/to/kwcdDZX2?typeform-medium=embed-snippet"
+                style="width: 100%; height: 500px;"></div>
+            <script>
+                (function () {
+                    var qs, js, q, s, d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = "typef_orm",
+                        b = "https://embed.typeform.com/";
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, "script");
+                        js.id = id;
+                        js.src = b + "embed.js";
+                        q = gt.call(d, "script")[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                })()
+            </script>
         </div>
     </section>
 
@@ -213,10 +231,9 @@
 
 
 
-    <!-- jQuery 3.5.1 -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+    <!--JQuery 3.6.0-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- Popper JS 1.16.1 -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
@@ -226,7 +243,7 @@
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous">
     </script>
     <!-- Mi Script -->
-    <script src="./assets/js/script.js"></script>
+    <script src="/assets/js/script.js"></script>
 
 
 </body>
