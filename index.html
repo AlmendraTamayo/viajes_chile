@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-    <!-- Google Fonts: ¿¿?? -->
-
+    <!-- Google Fonts: Lato 300 y 400 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -27,29 +28,36 @@
 
 <body>
     <!-- Navbar desde Bootstrap -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+        <div class="container">
+            <a class="navbar-brand pt-3" href="#">
+                <img src="./assets/img/viajes.svg" class="icon_brand" alt="">
+                <p class="text_brand">Viajes Chile</p>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Quiénes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Destacados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+
     <!-- Carrusel desde Bootstrap -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -75,14 +83,14 @@
 
     <!-- Sección Quienes somos con íconos FontAwesome y columnas desde bootstrap -->
     <section class="sec_somos text-center">
-        <h1>¿Quiénes somos?</h1>
+        <h1 class="pt-5 pb-2">¿Quiénes somos?</h1>
 
         <!-- Sección de columnas -->
         <div class="container">
-            <hr>
+            <hr class="divisor">
             <div class="row ">
                 <div class="col-md-4">
-                    <div class="icon_airplane">
+                    <div class="icon_sec_somos">
                         <i class="fas fa-plane fa-2x"></i>
                     </div>
                     <div class="texto_parrafo">
@@ -103,12 +111,12 @@
                             vel ut. Animi a, iure consectetur nulla corrupti facere doloremque at rem maiores
                             consequatur molestiae sequi ab explicabo distinctio.</p>
                     </div>
-                    <div class="icon_mountain">
+                    <div class="icon_sec_somos">
                         <i class="fas fa-mountain fa-2x"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div class="icon_route">
+                    <div class="icon_sec_somos">
                         <i class="fas fa-route fa-2x"></i>
                     </div>
                     <div class="texto_parrafo">
@@ -184,13 +192,13 @@
     </section>
 
     <!-- Footer con íconos fontAwesome -->
-<footer>
-    <span>VIAJES CHILE</span>
-    <i class="fab fa-github-square fa-3x"></i>
-    <i class="fab fa-linkedin fa-3x"></i>
-    <i class="fab fa-twitter-square fa-3x"></i>
-    <i class="fab fa-facebook-square fa-3x"></i>
-</footer>
+    <footer>
+        <span>VIAJES CHILE</span>
+        <i class="fab fa-github-square fa-3x"></i>
+        <i class="fab fa-linkedin fa-3x"></i>
+        <i class="fab fa-twitter-square fa-3x"></i>
+        <i class="fab fa-facebook-square fa-3x"></i>
+    </footer>
 
 
 

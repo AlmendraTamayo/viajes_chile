@@ -1,0 +1,41 @@
+/* Estilo para todo el body: fuente de letra y color */
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* Estilo y tamaño para la marca del Nav */
+
+.icon_brand {
+    width: 5%;
+    vertical-align: top;
+
+}
+
+.icon_brand,
+.text_brand {
+    display: inline-block;
+}
+
+/* Estilo sección ¿Quiénes somos? */
+.sec_somos h1 {
+    font-size: xx-large;
+
+}
+
+.divisor {
+    background-color: #17A3B8;
+}
+
+.icon_sec_somos {
+    background-color: #17A3B8;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.texto_parrafo{
+    text-align: left;
+}
+
