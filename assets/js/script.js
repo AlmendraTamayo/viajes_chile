@@ -1,43 +1,18 @@
-/* $(function () {
-$(window).scroll(function() {
-    if ($("#menu").offset().top > 150) {
-        $("#menu").addClass("bg-secondary");
-    } else {
-        $("#menu").removeClass("bg-secondary");
-    }
-  });
-}) */
-
-
-/* 
-    
- */
-   
 $(function(){
-    // Add smooth scrolling to all links
+    // Añadir scroll smooth al clickear un #
     $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
       if (this.hash !== "") {
-        // Prevent default anchor click behavior
         event.preventDefault();
-  
-        // Store hash
         var hash = this.hash;
-  
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
         $('html, body').animate({
           scrollTop: $(hash).offset().top
-        }, 1600, function(){
-     
-          // Add hash (#) to URL when done scrolling (default click behavior)
+        }, 1200, function(){
           window.location.hash = hash;
         });
-      } // End if
+      } 
     });
 
-
+    // Se agrega para que al bajar la página, el navbar tome un color de fondo y no se pierda.
     $(window).scroll(function(){
       var scroll = $(window).scrollTop();
       if(scroll < 300){

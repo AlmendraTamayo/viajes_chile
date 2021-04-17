@@ -70,4 +70,22 @@ body {
     margin-bottom: 0;
 }
 
+/* Links de los íconos se mantengan siempre blancos, sin importar si pincho o no sobre ellos. */
+.footer_pagina a:link {
+    color: white;
+  }
+  
 
+  .footer_pagina a:visited {
+    color:white;
+  }
+  
+
+  .footer_pagina a:hover {
+    color: white;
+  }
+  
+
+  .footer_pagina a:active {
+    color: white;
+  }
